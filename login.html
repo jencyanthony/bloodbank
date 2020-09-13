@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>Blood Bank Managament System</title>
+		<meta charset="utf-8">
+	</head>
+	<body text="black" onload="window.alert('Welcome! Successfully LOGGED IN');" onunload="window.alert('You are not logged in');" bgcolor="lightblue">
+	<script>
+	function printName(x)
+	{
+		window.alert(x.value);
+	}
+	function myFunction()
+	{
+		document.body.style.background ="white";
+	}
+	function myFunction1()
+	{
+		document.body.style.background ="skyblue";
+	}
+	function myrating()
+	{
+		alert("Thank You for your feedback");
+	}
+	
+	</script>
+		<h1><font  color="red"><center>BLOOD BANK INDIA</center></font></h1>
+		<details>
+			<summary>About Us</summary>
+			<p ondblclick="myFunction()">'Blood Bank India' is the first product resulted out of the community welfare initiative called 'People Project' from uSiS Technologies.
+			Universally, 'Blood' is recognized as the most precious element that sustains life. It saves innumerable lives across the world in a variety
+			of conditions. Once in every 2- seconds, someone, somewhere is desperately in need of blood. More than 29 million units of blood 
+			components are transfused every year. The need for blood is great - on any given day, approximately 39,000 units of Red Blood Cells are 
+			needed. Each year, we could meet only up to 1% (approx) of our nation's demand for blood transfusion.</p>
+			<p ondblclick="myFunction()" onmouseout="myFunction1()">Despite the increase in the number of donors, blood remains in short supply during emergencies, mainly attributed to the lack of 
+			information and accessibility. We positively believe this tool can overcome most of these challenges by effectively connecting the 
+			blood donors with the blood recipients.</p><br><br>
+		</details>
+		<details>
+			<summary>Quick Tips</summary>
+			<p ondblclick="myFunction()">A healthy diet helps ensure a successful blood donation, and also makes you feel better!
+			Check out the following recommended foods to eat prior to your donation.
+			<ol>
+				<ul>
+					<li>Low fat foods</li>
+					<li>Iron rich foods</li>
+				</ul>
+			</ol>				
+			</p>
+		</details><br><br>
+		<form action="feedback.php" method="POST">
+		Rate our Page &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+		<input name="feedack" type="number" min ="0" max="5" onkeypress="myrating()" /><br>
+		5-User Friendly 4-Good 3-better 2-should improve 1-bad
+		<input type="submit" name="login" value="reg"/>
+		</form>
+		<a href="F:\SEM_5\web\my assignment -II\homepage.html"><h4>BACK</h4></a><br>
+	</body>
+</html>
